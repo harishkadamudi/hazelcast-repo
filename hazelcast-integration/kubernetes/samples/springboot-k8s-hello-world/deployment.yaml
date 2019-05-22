@@ -24,7 +24,7 @@ spec:
           # Are we in Kubernetes
           - name: K8S
             value: "true"
-          image: "springboot-k8s-hello-world/the-server"
+          image: springboot-k8s-hello-world/the-server:latest
           # Always from local, never from Dockerhub
           imagePullPolicy: Never
           # Url to check every 10 seconds if the container is ok
@@ -131,7 +131,7 @@ spec:
           # Are we in Kubernetes
           - name: K8S
             value: "true"
-          image: "springboot-k8s-hello-world/the-client"
+          image: springboot-k8s-hello-world/the-client:latest
           # Always from local, never from Dockerhub
           imagePullPolicy: Never
           # Url to check every 10 seconds if the container is ok
